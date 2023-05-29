@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Header */
+.navbar-logo {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    width: 150px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        padding: 0%;
+    }
+  }
+
+
+.links {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-text-holder {
+    width: 100% !important;
+    margin:0 !important;
+    display: flex !important;
+    justify-content: flex-end;
+}
+
+
+.intro-holder {
+    position: relative;
+    color: #aaa;
+    font-size: small;
+    padding: 0;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.login-btn {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #df8d00;
+}
+
+/***************/
+/*    FOOTER   */
+/***************/
+
+.ftr-left, 
+.ftr-midLeft, 
+.ftr-midRight,
+.ftr-right {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contact-details ul,
+.ftr-nav ul {
+    color: #aaa;
+}
+
+.contact-details ul li,
+.ftr-nav ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/****** message box ******/
+
+@media screen and (max-width: 360px) {
+    .contact-details ul,
+    .ftr-nav ul {
+        padding: 0;
+    }
+    
+    .ftr-logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .ftr-left {
+        position: relative;
+        left: 400px;
+    }
+
+    .ftr-midLeft {
+        position: relative;
+        top: 370px;
+        left: 220px;
+        
+    }
+
+    .ftr-midRight {
+        position: relative;
+        top: 0;
+        right: -85px;
+    }
+
+    .ftr-right {
+        position: relative;
+        top: 650px;
+        right: 260px;
+    }
+
+    .msg-box {
+        width: 360px;
+    }
+
+    .msg-box .container { 
+        width: 320px;
+    }
+
+    .map-container {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    .contact-details{
+        margin: 0;
+        width: 160px;
+        font-size: small;
+    }
+
+    .ftr-nav {
+        margin: 0;
+        padding: 5px;
+        width: 160px;
+        font-size: medium;
+    }
+
+    .contact-details ul,
+    .ftr-nav ul {
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+
+    .ftr-nav ul li {
+        padding: 5px;
+    }
+
+
+    .ftr-logo {
+        width: 160px;
+        height: auto;
+    }
+
+    .ftr-midLeft {
+        width: 260px;
+    }
+
+    .loc-map {
+        width: 200px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 260px;
+    }
+
+    .ftr-right,
+    .msg-box {
+        width: 260px;
+    }
+
+    .msg-box .container {
+        width: 220px;
+      }
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+    .ftr-logo {
+        width: 180px;
+        height: auto;
+    }
+    .loc-map {
+        position: relative;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .map-container {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .msg-box {
+        color: #aaa;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 300px;
+        height: 350px;
+      }
+      
+    .msg-box  input[type=text], select, textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 1px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+    .msg-box input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+    .msg-box input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+    .msg-box .container {
+        height: 310px;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    
+    .msg-box .container label {
+        font-size: x-small;
+        margin-top: 5px;
+    }
+    
+    .msg-box .container textarea {
+        height: 100px;
+    }
+    
+    .loc-map {
+        background: #04AA6D;
+        width: 350px;
+        height: 250px;
+    }
+    
+    /***************/
+    /*  GOOGLE MAP */
+    /***************/
+    
+    .map-container {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+
+
+/*******************************/
+/*                             */
+/*   COPYRIGHT SECTION         */
+/*                             */
+/*******************************/
+
+.copyright {
+    display: flex;
+    color: #aaa;
+}
+
+.copyright strong:hover {
+    color: #f2f2f2;
+}
+
+.cpr-logo {
+    width: 100px;
+    height: auto;
+}
+.grp-name {
+    display: block;
+    position: relative;
+}
+.grp-name span {
+    color: #ccc;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+}
+
+.policy {
+    display: flex;
+}
+
+.policy span {
+    margin-left: 8px;
+    color: #aaa;
+}
+
+.policy span:hover {
+    color: #f2f2f2;
+}

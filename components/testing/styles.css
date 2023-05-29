@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #f8f8f8;
+    height: 60px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle::after {
+    content: "▼";
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 
+  }
