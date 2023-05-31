@@ -316,3 +316,215 @@ p {
 .policy span:hover {
     color: #f2f2f2;
 }
+
+/*******************************/
+/*                             */
+/*  Start of Category SECTION  */
+/*                             */
+/*******************************/
+
+.ctg-container {
+    /* border: 1px solid black; */
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    width: auto;
+    height: 550px;
+    margin: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 65px;
+}
+
+.ctg-container nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 500px;
+    padding-top: 35px;
+}
+
+.ctg-container nav label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    color: #232323;
+    font-size: 21px;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.ctg-container nav .ctg-slider {
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    background: #232323;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+#ctg-link-1:checked ~ nav .ctg-slider {
+    top: 35px;
+}
+
+#ctg-link-2:checked ~ nav .ctg-slider {
+    top: 110px;
+}
+
+#ctg-link-3:checked ~ nav .ctg-slider {
+    top: 185px;
+}
+
+#ctg-link-4:checked ~ nav .ctg-slider {
+    top: 260px;
+}
+
+#ctg-link-5:checked ~ nav .ctg-slider {
+    top: 335px;
+}
+
+#ctg-link-6:checked ~ nav .ctg-slider {
+    top: 410px;
+}
+
+#ctg-link-7:checked ~ nav .ctg-slider {
+    top: 485px;
+}
+
+#ctg-link-1:checked ~ nav label.ctg-link-1,
+#ctg-link-2:checked ~ nav label.ctg-link-2,
+#ctg-link-3:checked ~ nav label.ctg-link-3,
+#ctg-link-4:checked ~ nav label.ctg-link-4,
+#ctg-link-5:checked ~ nav label.ctg-link-5,
+#ctg-link-6:checked ~ nav label.ctg-link-6, 
+#ctg-link-7:checked ~ nav label.ctg-link-7 {
+    color: #fff;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.ctg-container .ctg-content {
+    display: none;
+}
+
+.ctn-container {
+    width: 970px;
+    height: 530px;
+    padding: 30px;
+    
+}
+
+#ctg-link-1:checked ~ .ctn-container .ctg-content-1,
+#ctg-link-2:checked ~ .ctn-container .ctg-content-2,
+#ctg-link-3:checked ~ .ctn-container .ctg-content-3,
+#ctg-link-4:checked ~ .ctn-container .ctg-content-4,
+#ctg-link-5:checked ~ .ctn-container .ctg-content-5,
+#ctg-link-6:checked ~ .ctn-container .ctg-content-6,
+#ctg-link-7:checked ~ .ctn-container .ctg-content-7 {
+    display: block;
+}
+
+/**************Action Figure Panel*****************/
+
+.ctg1-container {
+    width: auto;
+    height: 48px;
+    margin: 5px 0;
+}
+
+.ctg1-container nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: auto;
+    height: 13px;
+    border-radius: 5px;    
+}
+
+.ctg1-container nav label {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 48px;
+    top: -17px;
+    cursor: pointer;
+    color: #232323;
+    font-size: 21px;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.ctg1-container nav .ctg1-slider {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    background: #232323;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+
+#ctg1-link-1:checked ~ nav .ctg1-slider {
+    left: 0px;
+}
+
+#ctg1-link-2:checked ~ nav .ctg1-slider {
+    left: 242.5px;
+}
+
+#ctg1-link-3:checked ~ nav .ctg1-slider {
+    left: 485px;
+}
+
+#ctg1-link-4:checked ~ nav .ctg1-slider {
+    left: 727.5px;
+}
+
+#ctg1-link-1:checked ~ nav label.ctg1-link-1,
+#ctg1-link-2:checked ~ nav label.ctg1-link-2,
+#ctg1-link-3:checked ~ nav label.ctg1-link-3,
+#ctg1-link-4:checked ~ nav label.ctg1-link-4 {
+    color: #fff;
+}
+
+.ctg1-container .ctg1-ctn {
+    display: none;
+}
+
+#ctg1-link-1:checked ~ .ctg1-ctn-container .ctn-1,
+#ctg1-link-2:checked ~ .ctg1-ctn-container .ctn-2,
+#ctg1-link-3:checked ~ .ctg1-ctn-container .ctn-3,
+#ctg1-link-4:checked ~ .ctg1-ctn-container .ctn-4 {
+    display: block;
+}
+
+.ctg1-ctn {
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: auto;
+    height: 480px;
+}
+
+
+/*******************************/
+/*                             */
+/*  End of Category SECTION    */
+/*                             */
+/*******************************/

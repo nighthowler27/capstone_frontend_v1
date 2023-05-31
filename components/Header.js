@@ -143,9 +143,13 @@ export default function Header() {
             <Link href="/" passHref className="links">
                 <NavLink>  Home </NavLink>
             </Link>
+
+            <Link href="/categories" passHref className="links">
+                <NavLink>  Shop </NavLink>
+            </Link>
             
 
-            <Dropdown>
+            {/* <Dropdown>
               <DropdownToggle onClick={toggleDropdown1}>
                 Shop
               </DropdownToggle>
@@ -176,7 +180,8 @@ export default function Header() {
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenu>
-            </Dropdown>
+            </Dropdown> */}
+
 
             <Dropdown>
               <DropdownToggle onClick={toggleDropdown2}>
